@@ -9,17 +9,19 @@
 		}
 		var arrLines = strRawContents.split("\n");
 		for (var i = 0; i < arrLines.length; i++) {
-			var a = document.creatElement('a');
-			var link = document.createTextNode(arrLines[i]);
+			var a = document.createElement('a');
+			var text = document.createTextNode(arrLines[i]);
+			a.appendChild(text)
 			a.href = arrLines[i]+".html";
 			document.getElementById("builds").appendChild(a);
-			alert("Line #" + (i + 1) + " is: '" + curLine + "'");
+			document.getElementById("builds").appendChild(document.createElement('br'));
 		}
 	}
 </script>
 <iframe id="frmFile" src="builds" onload="LoadFile();" style="display: none;"></iframe>
 	<body>
 		<title>Assignment 2 build logs</title>
+		<h1>Assignment 2 build logs</h1>
 		<div id="builds"></div>
 	</body>
 </html>
