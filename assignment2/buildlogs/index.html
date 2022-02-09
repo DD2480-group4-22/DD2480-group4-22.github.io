@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript">
-	function LoadFile() {
-		const xhttp = new XMLHttpRequest();
-		xhttp.onload = function() {
-			var rt = this.responseText;
-			while (rt.indexOf("\r") >= 0) {
-				rt = rt.replace("\r", "");
-			}
-			var arrLines = rt.split("\n");
-			for (var i = 0; i < arrLines.length; i++) {
-				var a = document.createElement('a');
-				var text = document.createTextNode(arrLines[i]);
-				a.appendChild(text)
-				a.href = arrLines[i]+".html";
-				document.getElementById("builds").appendChild(a);
-				document.getElementById("builds").appendChild(document.createElement('br'));
-			}
-		}
-		xhttp.open("GET", "builds", true);
-		xhttp.send();
-		//var oFrame = document.getElementById("frmFile");
-		//var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
-	}
-</script>
 <iframe id="frmFile" src="builds" onload="LoadFile();" style="display: none;"></iframe>
 	<body>
+		<script type="text/javascript">
+			function LoadFile() {
+				
+			}
+			const xhttp = new XMLHttpRequest();
+			xhttp.onload = function() {
+				var rt = this.responseText;
+				while (rt.indexOf("\r") >= 0) {
+					rt = rt.replace("\r", "");
+				}
+				var arrLines = rt.split("\n");
+				for (var i = 0; i < arrLines.length; i++) {
+					var a = document.createElement('a');
+					var text = document.createTextNode(arrLines[i]);
+					a.appendChild(text)
+					a.href = arrLines[i]+".html";
+					document.getElementById("builds").appendChild(a);
+					document.getElementById("builds").appendChild(document.createElement('br'));
+				}
+			}
+			xhttp.open("GET", "builds", true);
+			xhttp.send();
+			//var oFrame = document.getElementById("frmFile");
+			//var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+		</script>
 		<title>Assignment 2 build logs</title>
 		<h1>Assignment 2 build logs</h1>
 		<div id="builds"></div>
