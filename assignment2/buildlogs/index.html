@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	function LoadFile() {
+		var oFrame = document.getElementById("frmFile");
+		var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+		while (strRawContents.indexOf("\r") >= 0) {
+			strRawContents = strRawContents.replace("\r", "");
+		}
+		var arrLines = strRawContents.split("\n");
+		for (var i = 0; i < arrLines.length; i++) {
+			var a = document.creatElement('a');
+			var link = document.createTextNode(arrLines[i]);
+			a.href = arrLines[i]+".html";
+			document.getElementById("builds").appendChild(a);
+			alert("Line #" + (i + 1) + " is: '" + curLine + "'");
+		}
+	}
+</script>
+<iframe id="frmFile" src="builds" onload="LoadFile();" style="display: none;"></iframe>
+	<body>
+		<title>Assignment 2 build logs</title>
+		<div id="builds"></div>
+	</body>
+</html>
