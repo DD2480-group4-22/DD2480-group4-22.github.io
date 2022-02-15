@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Commit identifier: fd9f38f577e7b56b10a7fde16a06c7ea6266e09e</h2>
+<h2>Build date: 2022/02/16 00:55:21</h2>
+<h2>Push log: </h2>
+<p>
+### Compilation and testing log ###<br>
+[INFO] Scanning for projects...<br>
+[INFO] <br>
+[INFO] ---------------------< com.group4.app:assignment2 >---------------------<br>
+[INFO] Building assignment2 1.0-SNAPSHOT<br>
+[INFO] --------------------------------[ jar ]---------------------------------<br>
+[INFO] <br>
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ assignment2 ---<br>
+[INFO] Using 'UTF-8' encoding to copy filtered resources.<br>
+[INFO] skip non existing resourceDirectory /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/src/main/resources<br>
+[INFO] <br>
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ assignment2 ---<br>
+[INFO] Changes detected - recompiling the module!<br>
+[INFO] Compiling 1 source file to /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/classes<br>
+[INFO] <br>
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ assignment2 ---<br>
+[INFO] Using 'UTF-8' encoding to copy filtered resources.<br>
+[INFO] skip non existing resourceDirectory /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/src/test/resources<br>
+[INFO] <br>
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ assignment2 ---<br>
+[INFO] Changes detected - recompiling the module!<br>
+[INFO] Compiling 1 source file to /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/test-classes<br>
+[INFO] <br>
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ assignment2 ---<br>
+[INFO] <br>
+[INFO] -------------------------------------------------------<br>
+[INFO]  T E S T S<br>
+[INFO] -------------------------------------------------------<br>
+[INFO] Running ContinuousIntegrationServerTest<br>
+DEBUG: setDebug: JavaMail version 1.6.2<br>
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]<br>
+DEBUG SMTP: need username and password for authentication<br>
+DEBUG SMTP: protocolConnect returning false, host=smtp.gmail.com, user=jacobbra, password=<null><br>
+DEBUG SMTP: useEhlo true, useAuth true<br>
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 465, isSSL true<br>
+220 smtp.gmail.com ESMTP c19sm824778lfs.198 - gsmtp<br>
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 465<br>
+EHLO staff-shell-1.sys.kth.se<br>
+250-smtp.gmail.com at your service, [130.237.227.18]<br>
+250-SIZE 35882577<br>
+250-8BITMIME<br>
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<br>
+250-ENHANCEDSTATUSCODES<br>
+250-PIPELINING<br>
+250-CHUNKING<br>
+250 SMTPUTF8<br>
+DEBUG SMTP: Found extension "SIZE", arg "35882577"<br>
+DEBUG SMTP: Found extension "8BITMIME", arg ""<br>
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"<br>
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""<br>
+DEBUG SMTP: Found extension "PIPELINING", arg ""<br>
+DEBUG SMTP: Found extension "CHUNKING", arg ""<br>
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""<br>
+DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=group4.dd2480@gmail.com, password=<non-null><br>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 <br>
+DEBUG SMTP: Using mechanism LOGIN<br>
+DEBUG SMTP: AUTH LOGIN command trace suppressed<br>
+DEBUG SMTP: AUTH LOGIN succeeded<br>
+DEBUG SMTP: use8bit false<br>
+MAIL FROM:<group4.dd2480@gmail.com><br>
+250 2.1.0 OK c19sm824778lfs.198 - gsmtp<br>
+RCPT TO:<oskaredv@kth.se><br>
+250 2.1.5 OK c19sm824778lfs.198 - gsmtp<br>
+DEBUG SMTP: Verified Addresses<br>
+DEBUG SMTP:   oskaredv@kth.se<br>
+DATA<br>
+421 4.3.0 Temporary System Problem.  Try again later (10). c19sm824778lfs.198 - gsmtp<br>
+DEBUG SMTP: got response code 421, with response: 421 4.3.0 Temporary System Problem.  Try again later (10). c19sm824778lfs.198 - gsmtp<br>
+<br>
+RSET<br>
+DEBUG SMTP: EOF: [EOF]<br>
+DEBUG SMTP: MessagingException while sending, THROW: <br>
+com.sun.mail.smtp.SMTPSendFailedException: 421 4.3.0 Temporary System Problem.  Try again later (10). c19sm824778lfs.198 - gsmtp<br>
+<br>
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)<br>
+	at com.sun.mail.smtp.SMTPTransport.data(SMTPTransport.java:2095)<br>
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1315)<br>
+	at javax.mail.Transport.send0(Transport.java:255)<br>
+	at javax.mail.Transport.send(Transport.java:124)<br>
+	at ContinuousIntegrationServer.sendEMail(ContinuousIntegrationServer.java:247)<br>
+	at ContinuousIntegrationServerTest.canSendEmail(ContinuousIntegrationServerTest.java:64)<br>
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)<br>
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br>
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)<br>
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br>
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)<br>
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)<br>
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)<br>
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)<br>
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)<br>
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)<br>
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)<br>
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)<br>
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)<br>
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)<br>
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)<br>
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)<br>
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)<br>
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)<br>
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)<br>
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br>
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br>
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br>
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)<br>
+QUIT<br>
+DEBUG SMTP: EOF: [EOF]<br>
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.312 s - in ContinuousIntegrationServerTest<br>
+[INFO] <br>
+[INFO] Results:<br>
+[INFO] <br>
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0<br>
+[INFO] <br>
+[INFO] <br>
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ assignment2 ---<br>
+[INFO] Building jar: /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/assignment2-1.0-SNAPSHOT.jar<br>
+[INFO] ------------------------------------------------------------------------<br>
+[INFO] BUILD SUCCESS<br>
+[INFO] ------------------------------------------------------------------------<br>
+[INFO] Total time:  4.440 s<br>
+[INFO] Finished at: 2022-02-16T00:55:29+01:00<br>
+[INFO] ------------------------------------------------------------------------<br>
+CI job done<br>
+</p></body></html>

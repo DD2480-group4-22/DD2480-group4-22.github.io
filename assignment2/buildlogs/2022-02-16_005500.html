@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Commit identifier: fd9f38f577e7b56b10a7fde16a06c7ea6266e09e</h2>
+<h2>Build date: 2022/02/16 00:55:00</h2>
+<h2>Push log: </h2>
+<p>
+### Compilation and testing log ###<br>
+[INFO] Scanning for projects...<br>
+[INFO] <br>
+[INFO] ---------------------< com.group4.app:assignment2 >---------------------<br>
+[INFO] Building assignment2 1.0-SNAPSHOT<br>
+[INFO] --------------------------------[ jar ]---------------------------------<br>
+[INFO] <br>
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ assignment2 ---<br>
+[INFO] Using 'UTF-8' encoding to copy filtered resources.<br>
+[INFO] skip non existing resourceDirectory /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/src/main/resources<br>
+[INFO] <br>
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ assignment2 ---<br>
+[INFO] Changes detected - recompiling the module!<br>
+[INFO] Compiling 1 source file to /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/classes<br>
+[INFO] <br>
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ assignment2 ---<br>
+[INFO] Using 'UTF-8' encoding to copy filtered resources.<br>
+[INFO] skip non existing resourceDirectory /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/src/test/resources<br>
+[INFO] <br>
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ assignment2 ---<br>
+[INFO] Changes detected - recompiling the module!<br>
+[INFO] Compiling 1 source file to /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/test-classes<br>
+[INFO] <br>
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ assignment2 ---<br>
+[INFO] <br>
+[INFO] -------------------------------------------------------<br>
+[INFO]  T E S T S<br>
+[INFO] -------------------------------------------------------<br>
+[INFO] Running ContinuousIntegrationServerTest<br>
+DEBUG: setDebug: JavaMail version 1.6.2<br>
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]<br>
+DEBUG SMTP: need username and password for authentication<br>
+DEBUG SMTP: protocolConnect returning false, host=smtp.gmail.com, user=jacobbra, password=<null><br>
+DEBUG SMTP: useEhlo true, useAuth true<br>
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 465, isSSL true<br>
+220 smtp.gmail.com ESMTP h4sm1249383ljb.5 - gsmtp<br>
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 465<br>
+EHLO staff-shell-1.sys.kth.se<br>
+250-smtp.gmail.com at your service, [130.237.227.18]<br>
+250-SIZE 35882577<br>
+250-8BITMIME<br>
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<br>
+250-ENHANCEDSTATUSCODES<br>
+250-PIPELINING<br>
+250-CHUNKING<br>
+250 SMTPUTF8<br>
+DEBUG SMTP: Found extension "SIZE", arg "35882577"<br>
+DEBUG SMTP: Found extension "8BITMIME", arg ""<br>
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"<br>
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""<br>
+DEBUG SMTP: Found extension "PIPELINING", arg ""<br>
+DEBUG SMTP: Found extension "CHUNKING", arg ""<br>
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""<br>
+DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=group4.dd2480@gmail.com, password=<non-null><br>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 <br>
+DEBUG SMTP: Using mechanism LOGIN<br>
+DEBUG SMTP: AUTH LOGIN command trace suppressed<br>
+DEBUG SMTP: AUTH LOGIN succeeded<br>
+DEBUG SMTP: use8bit false<br>
+MAIL FROM:<group4.dd2480@gmail.com><br>
+250 2.1.0 OK h4sm1249383ljb.5 - gsmtp<br>
+RCPT TO:<oskaredv@kth.se><br>
+250 2.1.5 OK h4sm1249383ljb.5 - gsmtp<br>
+DEBUG SMTP: Verified Addresses<br>
+DEBUG SMTP:   oskaredv@kth.se<br>
+DATA<br>
+354  Go ahead h4sm1249383ljb.5 - gsmtp<br>
+Date: Wed, 16 Feb 2022 00:55:08 +0100 (CET)<br>
+From: group4.dd2480@gmail.com<br>
+To: oskaredv@kth.se<br>
+Message-ID: <1295226194.0.1644969308382@staff-shell-1.sys.kth.se><br>
+Subject: subject of test<br>
+MIME-Version: 1.0<br>
+Content-Type: text/plain; charset=us-ascii<br>
+Content-Transfer-Encoding: 7bit<br>
+<br>
+This email is a test of javaMail<br>
+.<br>
+250 2.0.0 OK  1644969309 h4sm1249383ljb.5 - gsmtp<br>
+DEBUG SMTP: message successfully delivered to mail server<br>
+QUIT<br>
+221 2.0.0 closing connection h4sm1249383ljb.5 - gsmtp<br>
+Mail sent successfully<br>
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.633 s - in ContinuousIntegrationServerTest<br>
+[INFO] <br>
+[INFO] Results:<br>
+[INFO] <br>
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0<br>
+[INFO] <br>
+[INFO] <br>
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ assignment2 ---<br>
+[INFO] Building jar: /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/assignment2-1.0-SNAPSHOT.jar<br>
+[INFO] ------------------------------------------------------------------------<br>
+[INFO] BUILD SUCCESS<br>
+[INFO] ------------------------------------------------------------------------<br>
+[INFO] Total time:  4.774 s<br>
+[INFO] Finished at: 2022-02-16T00:55:10+01:00<br>
+[INFO] ------------------------------------------------------------------------<br>
+CI job done<br>
+</p></body></html>
