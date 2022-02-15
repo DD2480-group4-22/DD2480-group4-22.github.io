@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Commit identifier: fd9f38f577e7b56b10a7fde16a06c7ea6266e09e</h2>
+<h2>Build date: 2022/02/16 00:48:27</h2>
+<h2>Push log: </h2>
+<p>
+### Compilation and testing log ###
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.group4.app:assignment2 >---------------------
+[INFO] Building assignment2 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ assignment2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ assignment2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ assignment2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ assignment2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ assignment2 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running ContinuousIntegrationServerTest
+DEBUG: setDebug: JavaMail version 1.6.2
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: need username and password for authentication
+DEBUG SMTP: protocolConnect returning false, host=smtp.gmail.com, user=jacobbra, password=<null>
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 465, isSSL true
+220 smtp.gmail.com ESMTP b16sm3571575ljf.73 - gsmtp
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 465
+EHLO staff-shell-1.sys.kth.se
+250-smtp.gmail.com at your service, [130.237.227.18]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=group4.dd2480@gmail.com, password=<non-null>
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+DEBUG SMTP: Using mechanism LOGIN
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<group4.dd2480@gmail.com>
+250 2.1.0 OK b16sm3571575ljf.73 - gsmtp
+RCPT TO:<oskaredv@kth.se>
+250 2.1.5 OK b16sm3571575ljf.73 - gsmtp
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   oskaredv@kth.se
+DATA
+354  Go ahead b16sm3571575ljf.73 - gsmtp
+Date: Wed, 16 Feb 2022 00:48:35 +0100 (CET)
+From: group4.dd2480@gmail.com
+To: oskaredv@kth.se
+Message-ID: <1295226194.0.1644968915435@staff-shell-1.sys.kth.se>
+Subject: subject of test
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+This email is a test of javaMail
+.
+250 2.0.0 OK  1644968917 b16sm3571575ljf.73 - gsmtp
+DEBUG SMTP: message successfully delivered to mail server
+QUIT
+221 2.0.0 closing connection b16sm3571575ljf.73 - gsmtp
+Mail sent successfully
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.607 s - in ContinuousIntegrationServerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ assignment2 ---
+[INFO] Building jar: /afs/kth.se/home/j/a/jacobbra/DD2480/ClonedRepo/target/assignment2-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.013 s
+[INFO] Finished at: 2022-02-16T00:48:38+01:00
+[INFO] ------------------------------------------------------------------------
+CI job done
+</p></body></html>
