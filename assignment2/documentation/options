@@ -1,0 +1,26 @@
+-classpath
+'/home/jacko/.m2/repository/org/apache/maven/shared/maven-invoker/3.1.0/maven-invoker-3.1.0.jar:/home/jacko/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.3/maven-shared-utils-3.3.3.jar:/home/jacko/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/jacko/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/jacko/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/jacko/.m2/repository/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar:/home/jacko/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/home/jacko/.m2/repository/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:/home/jacko/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar:/home/jacko/.m2/repository/org/eclipse/jetty/aggregate/jetty-all/9.0.2.v20130417/jetty-all-9.0.2.v20130417.jar:/home/jacko/.m2/repository/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016.jar:/home/jacko/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/4.6.0.201612231935-r/org.eclipse.jgit-4.6.0.201612231935-r.jar:/home/jacko/.m2/repository/com/jcraft/jsch/0.1.53/jsch-0.1.53.jar:/home/jacko/.m2/repository/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar:/home/jacko/.m2/repository/org/apache/httpcomponents/httpclient/4.3.6/httpclient-4.3.6.jar:/home/jacko/.m2/repository/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.jar:/home/jacko/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/jacko/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar:/home/jacko/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/jacko/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/jacko/.m2/repository/org/slf4j/slf4j-simple/1.6.4/slf4j-simple-1.6.4.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.7'
+-sourcepath
+'/mnt/d/projects/DD2480/assignment2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/mnt/d/projects/DD2480/assignment2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'assignment2 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/7/docs/api' '/mnt/d/projects/DD2480/assignment2/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'assignment2 1.0-SNAPSHOT API'
